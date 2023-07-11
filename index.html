@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-image: url("https://e0.pxfuel.com/wallpapers/232/410/desktop-wallpaper-preview-background-cell-solid-color-line.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #333;
+    }
+
+    .navbar-brand {
+      font-size: 24px;
+    }
+
+    .navbar-toggler {
+      border-color: transparent;
+    }
+
+    .navbar-toggler-icon {
+      background-color: #fff;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+      color: #fff;
+      font-size: 18px;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #fff;
+      margin-top: 20px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+      font-size: 18px;
+      padding: 10px 20px;
+      margin-top: 20px;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+
+    /* Adjust the height of the image */
+    .study-image {
+      height: 300px; /* Adjust the value as desired */
+    }
+  </style>
+  <title>My Bootstrap Web Page</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">My Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <h1>Welcome to My Bootstrap Web Page</h1>
+    <p class="animated-heading">This is a simple web page built using HTML and Bootstrap.</p>
+
+    <h2>Why Study?</h2>
+    <img src="https://w0.peakpx.com/wallpaper/793/70/HD-wallpaper-a-boy-study-book-in-library-study-wall-library-thumbnail.jpg" alt="Study Image" class="img-fluid study-image">
+    <p>Studying is an essential part of learning and acquiring knowledge. It helps us understand and master various subjects and skills. Through dedicated study, we can improve our intellectual abilities, expand our horizons, and achieve our goals.</p>
+
+    <h2>Tips for Effective Studying</h2>
+    <ul>
+      <li>Find a quiet and comfortable study environment.</li>
+      <li>Set specific goals and create a study plan.</li>
+      <li>Take regular breaks to maintain focus and prevent burnout.</li>
+      <li>Use effective study techniques like summarizing, highlighting, and practicing with quizzes.</li>
+      <li>Stay organized and manage your time efficiently.</li>
+      <li>Seek clarification and ask questions when needed.</li>
+      <li>Stay motivated and reward yourself for achieving milestones.</li>
+    </ul>
+
+    <h2>Benefits of Continuous Learning</h2>
+    <p>Continuous learning helps us stay updated with new information, developments, and advancements in various fields. It allows us to adapt to changes, improve our skills, and remain competitive in a rapidly evolving world. Lifelong learning also promotes personal growth, enhances creativity, and opens up new opportunities for career advancement.</p>
+
+    <button class="btn btn-primary">Click Me!</button>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navbarToggler = document.querySelector(".navbar-toggler");
+      const navbarCollapse = document.querySelector(".navbar-collapse");
+
+      navbarToggler.addEventListener("click", function () {
+        navbarCollapse.classList.toggle("show");
+      });
+    });
+  </script>
+</body>
+
+</html>
